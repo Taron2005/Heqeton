@@ -1,0 +1,340 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap");
+:root {
+	--orange: rgb(2, 2, 95);
+	--darkgrey: gray;
+}
+
+* {
+	font-family: "Nunito", sans-serif;
+	margin: 0;
+	padding: 0;
+	border: none;
+	box-sizing: border-box;
+	transition: 0.2s;
+	text-transform: capitalize;
+	text-decoration: none;
+	outline: none;
+}
+
+*::selection {
+	background-color: var(--orange);
+	color: white;
+}
+
+.btn {
+	background-color: var(--orange);
+	width: 170px;
+	height: 50px;
+	border: 2px solid var(--orange);
+	color: white;
+}
+
+.btn:hover {
+	background-color: #ffa60052;
+	color: var(--orange);
+}
+
+/* ===== header start===== */
+
+header {
+	z-index: 1000;
+	width: 100%;
+	height: 75px;
+	background-color: var(--orange);
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	position: fixed;
+	border-bottom: 1px solid white;
+}
+
+.title {
+	display: flex;
+	font-size: 1.3rem;
+	font-weight: bold;
+	cursor: pointer;
+	text-transform: uppercase;
+	color: white;
+}
+
+.T {
+	color: rgb(91, 91, 227);
+}
+
+nav {
+	display: flex;
+}
+
+nav > a {
+	margin-right: 20px;
+	color: white;
+	font-size:1rem;
+}
+
+nav > a:hover {
+	color: var(--orange);
+}
+
+.container {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+/* .fl {
+	width: 200px;
+	height: 40px;
+	background-color: #3333339d;
+	display: flex;
+	margin-top: 20px;
+	justify-content: space-between;
+	align-items: center;
+	border-radius: 20px;
+	padding: 0.5rem;
+} */
+
+.our_img {
+	z-index: -1;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height:100vh;
+	object-fit: cover;
+}
+
+.adventures {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+
+/* =====Book start===== */
+
+
+
+.book_title {
+	display: flex;
+	justify-content: center;
+}
+
+.letters {
+	display: flex;
+	width: 65px;
+	height: 65px;
+	background-color: rgba(96, 96, 239, 0.858);
+	margin-left: 8px;
+	justify-content: center;
+	align-items: center;
+	border-radius: 10px;
+}
+
+.letter {
+	font-size: 2.8rem;
+	color: var(--orange);
+	font-weight: 900;
+}
+
+/* ====Packages start ====*/
+
+ h3{
+	color: var(--orange);
+	text-align: center;
+}
+
+p, li{
+	color: var(--darkgrey);
+	text-align: center;
+}
+
+.review {
+	margin-top: 100px;
+}
+
+.review_main {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	overflow: hidden;
+}
+
+.review_container {
+    width: 100%;
+	margin-top: 100px;
+	display: flex;
+	align-items: center;
+    flex-wrap: wrap;
+    margin: 20px;
+    justify-content: center;
+}
+
+
+.review_box {
+	width: 355px;
+    min-height: 200px;
+    background-color: rgba(96, 96, 239, 0.264);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	box-shadow: 0 0 10px gray;
+	position: relative;
+    margin: 10px;
+}
+
+.review_box h3 {
+	font-size: 24px;
+}
+
+.review_box p {
+	color: var(--darkgrey);
+}
+
+.review_box img {
+    width: 100%;
+    height: 80%;
+	/* border-radius: 50%; */
+}
+
+.lists{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    /* align-items: center; */
+    margin-top:12px;
+
+}
+li{
+    padding: 16px;
+    font-size: 2rem;
+    color: var(--orange);
+}
+
+
+.lists ul {
+    list-style-type: circle;
+    padding-left: 1.5rem;
+    background-color: #ffffff;
+    border-left: 5px solid #4a90e2;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    width: fit-content;
+    margin-bottom: 2rem;
+}
+
+.lists ul li {
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.cluster-info {
+    background-color: #eef4fb;
+    padding: 1rem;
+    border-radius: 10px;
+    max-width: 700px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.cluster-info a {
+    color: #2a67c9;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.cluster-info a:hover {
+    color: #1a488f;
+    text-decoration: underline;
+}
+/* ==== Review end ==== */
+
+@keyframes slider {
+	0% {
+		margin-left: 150px;
+	}
+	100% {
+		margin-left: -250px;
+	}
+}
+
+
+@media screen and (max-width: 1207px) {
+	.review_container {
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+	}
+	.review_container .review_box {
+		margin-top: 10px;
+		margin-left: 10px;
+	}
+
+}
+
+@media screen and (max-width: 830px) {
+	
+	header {
+		flex-wrap: wrap;
+	}
+	/* .search{
+        margin-left: -46%;
+    } */
+}
+
+@media screen and (max-width: 780px) {
+	.search {
+		margin-top: 15px;
+		margin-left: -40%;
+	}
+}
+
+@media screen and (max-width: 730px) {
+	.review_container {
+		justify-content: center;
+	}
+}
+
+@media screen and (max-width: 680px) {
+	header {
+		height: 105px;
+	}
+	.search {
+		margin-top: 10px;
+	}
+	@keyframes slider {
+		0% {
+			margin-left: 150px;
+		}
+		100% {
+			margin-left: -300px;
+		}
+	}
+}
+
+@media screen and (max-width: 610px) {
+	nav a {
+		font-size: 14px;
+	}
+}
+
+@media screen and (max-width: 510px) {
+	.book_title .letters {
+		width: 40px;
+		font-size: 30px;
+	}
+	.book_title .letter {
+		font-size: 30px;
+	}
+	.search {
+		margin-top: 15px;
+		margin-left: -38%;
+	}
+}
+
